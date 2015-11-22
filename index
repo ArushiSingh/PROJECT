@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Indian Enquary with map</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+   
+  </head>
+  <body>
+    <div class="slide" id="map-view">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 col-xs-offset-8" id="form-container">
+            <div class="col-xs-12 col-md-10 hideShow">
+              <div class="input-label">Train Number*</div>
+              <input type="text" id="train" class="form-control">
+            </div>
+            <div class="col-xs-12 col-md-2 hideShow">
+              <div class="input-label">&nbsp;</div>
+              <div class="submit" id="submit"><span class="glyphicon glyphicon-send"></span></div>
+            </div>
+
+            <div class="col-xs-12 col-md-12">
+              <div class="tab-break"><label>I want to search By station <input type="checkbox" id="tick-box"></label></div>
+            </div>
+
+            <div class="col-xs-12 col-md-5">
+              <div class="input-label">From*</div>
+              <input class="form-control" type="text" id="srcStn">
+            </div>
+
+            <div class="col-xs-12 col-md-5">
+              <div class="input-label">To*</div>
+              <input class="form-control" type="text" id="destStn">
+            </div>
+            <div class="col-xs-12 col-md-12" id="trainList">
+              
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-12 map-container">
+            <div id="map"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/javaScript.js"></script>
+     <script>
+       $("#map").width($(document).width());
+    $("#map").height($(document).height());
+   </script>
+</body>
+</html>
