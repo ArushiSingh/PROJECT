@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://api.railwayapi.com/route/train/";
+$url = "http://www.api.railwayapi.com/route/train/";
 $key = "/apikey/plbss7025/";
 
 
